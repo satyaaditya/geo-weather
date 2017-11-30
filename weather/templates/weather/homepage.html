@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>homepage</title>
+    <link rel="home icon" href="../../static/assets/img/homeicon.ico" type="image/x-icon">
+    <link href="../../static/assets/css/bootstrap.min.css" rel="stylesheet" />
+    <style>
+
+        .gfont{
+            color: white;
+        }
+        #colDesc{
+            border: 5px solid #e7e7e7;
+            margin: 0 auto;
+            height: auto;
+        }
+        #welcome-paragraph{
+            font-size: 20px;
+            font-weight: normal;
+            padding: 12px 25px 40px 25px;
+            letter-spacing: 0.5px;
+        }
+        .bd-navbar{
+            background-color:#563d7c ;
+        }
+
+    </style>
+</head>
+<body>
+<nav class="navbar navbar-toggleable-md navbar-light bd-navbar">
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="homepage.html"><strong class="gfont">Geo Weather</strong></a>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="current_weather.html"><button class="btn btn-outline-info">Current</button></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="forecast.html"><button class ="btn btn-outline-info">Forecast</button></a>
+            </li>
+        </ul>
+
+            <button class="btn btn-danger  " type="submit">logout</button>
+
+    </div>
+</nav>
+<div class="container-fluid">
+
+    <div class="container" style="margin-bottom: 170px;">
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="text-center text-primary" style="margin-top:40px; ">Geo Weather App</h2>
+                <p class="text-center" id="welcome-paragraph">Geo Weather is a web application which helps you to know the weather details of your city.This application uses openweathermap API to fetch weather details</p>
+            </div>
+        </div>
+
+        <div class="row" style="margin-left: 15%">
+            <div class="col-md-6">
+            <div class="card" style="width: 20rem;border-width: thick;color:darkblue">
+
+                <div class="card-block">
+                    <h4 class="card-title text-center">Current weather</h4>
+                    <p class="card-text">click the below button to know the weather details of your city</p>
+                    <a href="current_weather.html" class="btn btn-primary btn-block">Go</a>
+                </div>
+            </div>
+        </div>
+            <div class="col-md-6">
+            <div class="card" style="width: 20rem;border-width: thick; color:darkblue">
+                <div class="card-block">
+                    <h4 class="card-title text-center">Forecast</h4>
+                    <p class="card-text">click the below button to see the forecast of next few days of your city</p>
+                    <a href="forecast.html" class="btn btn-primary btn-block">Go</a>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>
+<!-- <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="text" placeholder="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>-->

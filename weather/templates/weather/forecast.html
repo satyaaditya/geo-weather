@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>forecast</title>
+    <link rel="home icon" href="../../static/assets/img/forecast.ico" type="image/x-icon">
+    <link href="../../static/assets/css/bootstrap.min.css" rel="stylesheet" />
+    <style>
+        .bd-navbar{
+            background-color:#563d7c ;
+        }
+        th{
+            background: #4aa1f3;
+            font-weight: bold;
+            font-size: 18px;
+            color: white;
+        }
+
+        td{
+            background: #FAFAFA;
+            text-align: center;
+            font-size: 18px;
+        }
+
+    </style>
+</head>
+<body>
+<nav class="navbar navbar-toggleable-md navbar-light bd-navbar">
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="homepage.html"><strong class="gfont">Geo Weather</strong></a>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="current_weather.html"><button class="btn btn-outline-info">Current</button></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="forecast.html"><button class ="btn btn-outline-info">Forecast</button></a>
+            </li>
+        </ul>
+
+        <button class="btn btn-danger  " type="submit">logout</button>
+    </div>
+</nav>
+<div class="jumbotron jumbotron-fluid" style="background-color: #4aa1f3">
+    <div class="container" >
+        <h1 class="display-4" style="font-synthesis: weight;font-family: Arial Rounded MT Bold;">forecast ahead.......</h1>
+    </div>
+</div>
+
+<div class="container" style="height: 650px;">
+    <div class="row form-group form-inline" id="cityDiv" style="margin-left:29%">
+        <input type="text" class="form-control" style="margin-right: 2%" placeholder="Enter city name" size="40" id="for_city_input">
+        <input type="text" class="form-control" style="margin-right: 2%" placeholder="enter days(1-10)" size="20" id="days_input">
+        <button id= "submit_city" class="btn btn-success">go</button>
+    </div>
+    <div class="row" style="margin-top:30px">
+        <table class="table table-bordered">
+            <div id="header"  class="text-center"></div>
+
+            <thead>
+            <tr>
+                <th>Icon</th>
+                <th>Weather</th>
+                <th>Description</th>
+                <th>Morning Temperature</th>
+                <th>Night Temperature</th>
+                <th>Min. Temperature</th>
+                <th>Max. Temperature</th>
+                <th>Pressure</th>
+                <th>Humidity</th>
+                <th>Wind Speed</th>
+                <th>Wind Direction</th>
+            </tr>
+            </thead>
+
+            <tbody id="forecastWeather">
+
+            </tbody>
+
+        </table>
+    </div>
+</div>
+
+<script src="../../static/assets/js/core/jquery.3.2.1.min.js" rel="text/javascript" ></script>
+<script src="../../static/assets/js/forecast.js"></script>
+</body>
+
+
+</html>

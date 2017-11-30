@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>present weather</title>
+    <link rel="current icon" href="../../static/assets/img/current.ico" type="image/x-icon">
+    <link href="../../static/assets/css/bootstrap.min.css" rel="stylesheet" />
+    <style>
+        .bd-navbar{
+            background-color:#563d7c ;
+        }
+    </style>
+</head>
+<body>
+<nav class="navbar navbar-toggleable-md navbar-light bd-navbar">
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="homepage.html"><strong class="gfont">Geo Weather</strong></a>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="current_weather.html"><button class="btn btn-outline-info">Current</button></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="forecast.html"><button class ="btn btn-outline-info">Forecast</button></a>
+            </li>
+        </ul>
+
+        <button class="btn btn-danger  " type="submit">logout</button>
+    </div>
+</nav>
+
+<div class="jumbotron jumbotron-fluid">
+    <div class="container">
+        <h1 class="display-3">know your weather information</h1>
+        <p class="lead">enter your city name and see the weather information of your city,<span><strong>Hurry up...match is yet to be started</strong></span></p>
+    </div>
+</div>
+    <div class="container" style="height: 650px;">
+        <div class="row form-group form-inline" id="cityDiv" style="margin-left:29%">
+            <input type="text" class="form-control" style="margin-right: 2%" placeholder="Enter city name" size="50" id="city_input">
+            <button type="submit" id= "submit_city" class="btn btn-success">go</button>
+        </div>
+
+        <div id="showWeather"></div>
+    </div>
+</body>
+
+<script src="../../static/assets/js/core/jquery.3.2.1.min.js" rel="text/javascript" ></script>
+
+<script src="../../static/assets/js/current.js"></script>
+</html>
